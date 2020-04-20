@@ -1,0 +1,11 @@
+.image-size{
+    height:75%; width:100%;
+}
+
+.image-done{
+    filter: blur(5px);
+}
+
+.card-title{
+    color: green;
+}

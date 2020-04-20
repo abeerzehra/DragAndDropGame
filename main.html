@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Game</title>
+</head>
+
+<body>
+
+    <div class="container ">
+        <h1 class="d-flex align-items-center justify-content-center">Game</h1>
+        <h3>Points:<strong><span id="points">0</span></strong></h3>
+        <h4>Level:<strong><span id="level">1</span></strong></h4>
+        <p id="timer"></p>
+        <h4>Sources:</h4>
+
+        <div class="row" id="source">
+            
+            <div class="col-md-2 col-4 sourceDiv">
+                <img id="s5" ondragstart="dragStart(event)" draggable="true"
+                    class="source image-size img-thumbnail" src="./img/s5.jpeg" alt=""></div>
+
+
+            <div class="col-md-2 col-4 sourceDiv">
+                <img id="s3" ondragstart="dragStart(event)" draggable="true"
+                    class="source image-size img-thumbnail" src="./img/s3.jpeg" alt=""></div>
+            <div class="col-md-2 col-4 sourceDiv">
+                <img id="s2" ondragstart="dragStart(event)" draggable="true"
+                    class="image-size img-thumbnail source" src="./img/s2.jpeg" alt=""></div>
+
+            <div class="col-md-2 col-4 sourceDiv">
+                <img id="s6" ondragstart="dragStart(event)" draggable="true"
+                    class="source image-size img-thumbnail" src="./img/s6.jpeg" alt=""></div>
+
+            <div class="col-md-2 col-4 sourceDiv">
+                <img id="s4" ondragstart="dragStart(event)" draggable="true"
+                            class="source image-size img-thumbnail" src="./img/s4.jpeg" alt=""></div>
+
+            <div class="col-md-2 col-4 sourceDiv">
+                <img id="s1" ondragstart="dragStart(event)" draggable="true" class="source img-thumbnail image-size"
+                    src="./img/s1.jpeg" alt="">
+            </div>
+
+           </div>
+
+        <h4>Destination</h4>
+        <div class="row" id="destination">
+            <div class="col-md-2 col-4 destDiv" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="d1" draggable="true"
+                    class="dest img-thumbnail image-size" src="./img/d1.jpeg" alt=""></div>
+            <div class="col-md-2 col-4 destDiv" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="d2" draggable="true"
+                    class="dest img-thumbnail image-size" src="./img/d2.jpeg" alt=""></div>
+            <div class="col-md-2 col-4 destDiv" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="d3" draggable="true"
+                    class="dest img-thumbnail image-size" src="./img/d3.jpeg" alt=""></div>
+            <div class="col-md-2 col-4 destDiv" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="d4" draggable="true"
+                    class="dest img-thumbnail image-size" src="./img/d4.jpeg" alt=""></div>
+            <div class="col-md-2 col-4 destDiv" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="d5" draggable="true"
+                    class="dest img-thumbnail image-size" src="./img/d5.jpeg" alt=""></div>
+            <div class="col-md-2 col-4 destDiv" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="d6" draggable="true"
+                    class="dest img-thumbnail image-size" src="./img/d6.jpeg" alt=""></div>
+        </div>
+        <div><button class="btn btn-md btn-primary" onclick="reset()">Reset</button></div>
+    </div>
+
+
+    <script src="./bootstrap/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="./bootstrap//js/popper.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+    <!-- <script type="text/javascript" src="./js/timer.js"></script> -->
+
+</body>
+
+</html>
